@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=0.2">
+  <meta name="robots" content="index, follow">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QE0YDGF88M"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QE0YDGF88M');
+</script>
+  <title>Whale Hunter App</title>
+  <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,600%7CIBM+Plex+Sans:300,400,500,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.0/css/all.min.css">
+  <!-- Sweetalert -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@9.7.2/dist/sweetalert2.min.css">
+  <!-- Render section boilerplate css -->
+  <!-- Theme style -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.0.4/dist/css/adminlte.min.css">
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap">
+  <link rel="icon" href="/favicon.png" type="image/gif">
+  <style type="text/css">
+    body {
+      font-family: "IBM Plex Sans", Helvetica, Arial, serif !important;
+	font-size: 0.9rem !important;
+        line-height: 0.9em !important;
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.5.1.js" type="text/javascript"></script>
+  
+</head>
+
+<body class="layout-fixed layout-navbar-fixed sidebar-mini  ">
+  <div class="wrapper">
+
+    <!-- Navbar -->
+    <nav class="main-header navbar navbar-expand navbar-black navbar-dark ">
+      <ul class="nav navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link sidebar-toggle" data-widget="pushmenu" href="#"><i class="fas fa-bars"></i></a>
+        </li>
+      </ul>
+      <!-- Right navbar links -->
+      <ul class="navbar-nav ml-auto">
+        <!-- Messages Dropdown Menu -->
+        <!-- Notifications Dropdown Menu -->
+
+        <li class="nav-item dropdown">
+          <a class="nav-link" data-toggle="dropdown" href="#">
+            <i class="fa fa-power-off"></i>
+            <!-- <span class="badge badge-warning navbar-badge">15</span> -->
+          </a>
+          <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+            <div class="card card-primary card-outline">
+              <div class="card-body box-profile">
+                <div class="text-center">
+                  <img class="profile-user-img img-fluid img-circle" src="/28_GIF.gif" alt="User profile picture">
+                </div>
+
+
+
+                <ul class="list-group list-group-unbordered mb-3">
+                  <li class="list-group-item">
+                    <span> Member since: </span>
+                    <div class="float-right">
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <span>Membership ends on: </span>
+                    <div class="float-right">
+                    </div>
+                  </li>
+                </ul>
+
+                <a href="/logout" class="btn btn-primary btn-block"><b>Logout</b></a>
+              </div>
+              <!-- /.card-body -->
+            </div>
+          </div>
+        </li>
+      </ul>
+    </nav> <!-- /.navbar -->
+
+    <!-- Main Sidebar Container -->
+
+    <aside class="main-sidebar  sidebar-dark-blue elevation-4">
+      <a href="/" class="brand-link bg-gray-dark">
+        <img src="/favicon.png" class="brand-image img-circle elevation-2" style="background-color: white;opacity: .8">
+        <span class="brand-text"><strong>Whale </strong>Hunter App</span>
+      </a>
+      <div class="sidebar">
+        <div class="user-panel py-3 d-flex">
+          <div class="image">
+            <img src="/28_GIF.gif" class="img-circle elevation-2" alt="User Image">
+          </div>
+          <div class="info">
+            <a href="#" class="d-block"></a>
+          </div>
+        </div>
+        <nav class="mt-3">
+          <hr style='margin-top: 0.2rem;margin-bottom: 0.2rem;color: white;border-top: 1px solid rgb(255 255 255 / 58%);'>
+          <ul class='nav nav-pills nav-sidebar flex-column nav-child-indent nav-compact' data-widget='treeview' role='menu' data-accordion='false'>
+            <li class="nav-item has-treeview">
+              <a href="/binance-futures" class="nav-link active</a>">
+                <img src="/images/binance.png" width="25px">
+                <p>
+                  Binance Futures 
+                  <!-- <i class="right fas fa-angle-left"></i> -->
+                </p>
+              </a>
+              <!-- <ul class="nav nav-treeview">
+                <li class="nav-item has-treeview">
+                  <a href="/binance-futures" class="nav-link active">
+                    <i class="nav-icon fas fa-code"></i>
+                    <p>Futures ? Signals</p>
+                  </a>
+                </li>
+              </ul> -->
+            </li>
+          </ul>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </aside>
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper bg-dark ">
+      <!-- Content Header (Page header) -->
+      <br> <!-- /.content-header -->
+
+      <!-- Main content -->
+      <section class="content">
+        <div class="container-fluid">
+          <script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js" type="text/javascript"></script>
+<style>
+  input[type="search"] {
+    color: white;
+  }
+
+  .symbol {
+    cursor: pointer;
+  }
+
+  [bg-color=Long] {
+    background-color: green;
+  }
+
+  [bg-color=Short] {
+    background-color: red;
+  }
+
+  [bg-color=Low] {
+    background-color: yellow;
+  }
+
+  [bg-color=Medium] {
+    background-color: orange;
+  }
+
+  [text-color=Long] {
+    color: green;
+  }
+
+  [text-color=Short] {
+    color: red;
+  }
+
+  i.fa-star {
+    color: #FFC000;
+  }
+
+  .tv-section .tv-div {
+    z-index: 99999;
+    position: fixed;
+    right: 2vh;
+    bottom: 5vh;
+    padding: 1rem;
+    width: 50%;
+  }
+
+  #example_filter {
+    float: left;
+    text-align: left;
+  }
+
+  a,
+  a:hover {
+    color: white;
+    text-decoration: none;
+  }
+
+  table {
+    font-size: smaller;
+  }
+  
+  table.dataTable tbody th,
+  table.dataTable tbody td {
+    padding: 3px 3px !important;
+  }
+
+  table.dataTable tbody th,
+  table.dataTable tbody td {
+    white-space: nowrap !important;
+  }
+</style>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2617085237458155"
+     crossorigin="anonymous"></script>
+
+<script src="https://kit.fontawesome.com/d16d6596ab.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css">
+
+<section class="tv-section align-middle" id="tv">
+  <div class="tv-div">
+    <div class="tradingview-widget-container">
+      <div id="tradingview_3b585"></div>
+      <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+      <script type="text/javascript">
+        const tv = new TradingView.widget({
+          "width": 550,
+          "height": 450,
+	  "autosize": false,
+          "symbol": "BINANCE:BTCUSDTPERP",
+          "interval": "3",
+          "timezone": Intl.DateTimeFormat().resolvedOptions().timeZone,
+          "theme": "dark",
+          "style": "1",
+          "locale": "en",
+          "toolbar_bg": "#f1f3f6",
+          "enable_publishing": true,
+          "allow_symbol_change": true,
+          "studies": [
+            "BB@tv-basicstudies"
+          ],
+          "container_id": "tradingview_3b585"
+        });
+      </script>
+    </div>
+
+  </div>
+</section>
+
+<table id="example" class="table table-striped table-bordered table-dark dataTable no-footer" width="100%"></table>
+
+
+
+<script type="text/javascript">const _0x295228=_0x1eb9;(function(_0x5bbacb,_0x19358c){const _0x58e132=_0x1eb9,_0x3bdcbe=_0x5bbacb();while(!![]){try{const _0x2ad639=parseInt(_0x58e132(0x16c))/0x1*(parseInt(_0x58e132(0x17d))/0x2)+-parseInt(_0x58e132(0x180))/0x3+parseInt(_0x58e132(0x142))/0x4*(-parseInt(_0x58e132(0x18d))/0x5)+parseInt(_0x58e132(0x16a))/0x6*(parseInt(_0x58e132(0x16d))/0x7)+parseInt(_0x58e132(0x175))/0x8*(-parseInt(_0x58e132(0x182))/0x9)+parseInt(_0x58e132(0x170))/0xa+parseInt(_0x58e132(0x187))/0xb;if(_0x2ad639===_0x19358c)break;else _0x3bdcbe['push'](_0x3bdcbe['shift']());}catch(_0x38868d){_0x3bdcbe['push'](_0x3bdcbe['shift']());}}}(_0x14c1,0x7fd52));const dataSet=[],tvDiv=document['getElementById']('tradingview_3b585');tvDiv[_0x295228(0x15d)]['display']='none';const LONG=_0x295228(0x16b),SHORT=_0x295228(0x153),STAR=_0x295228(0x178),lowSignalSound=new Audio(_0x295228(0x14c)),mediumSignalSound=new Audio(_0x295228(0x17a)),highSignalSound=new Audio(_0x295228(0x158));function _0x14c1(){const _0x67862d=['percent','DataTable','<i\x20class=\x22fa\x20fa-star\x22></i>','click','/mediumtone.mp3','onerror','totalUsdt','2yeEpSE','add','24h\x20Change','1915665WHQcyP','color:#bd1816','1623546xWXQVj','PERP\x22\x20target=\x22_blank\x22>','down','text-color','BINANCE:','6130520NZqfMU','bg-color','\x22></i>','Last\x20Price','error','24h\x20Total\x20Short\x20(USDT)','5VhhuRO','attr','#example','display','Low','toLocaleString','time','Strength','2166144pNPWvS','</a>','Symbol','Closing\x20socket','rows','filter','options','Medium\x20<br>','wss://whalehunterapp.com','hide()','/lowtone.mp3','High\x20<br>','play','Socket\x20is\x20closed.\x20Reconnect\x20will\x20be\x20attempted\x20in\x201\x20second.','Total\x20(USDT)','log','type','Short\x20<i\x20class=\x22\x20fas\x20fa-long-arrow-alt-down\x22\x20style=\x22color:#bd1816\x22></i>','clear','reduce','onmouseout','color:#008000','/hightone.mp3','High','en-US','.sidebar-toggle','toFixed','style','Signal','unshift','data','Short','reload','symbol','PERP','\x22\x20style=\x22','draw','24h\x20Total\x20Long\x20(USDT)','message','desc','1604706euKEDF','Long\x20<i\x20class=\x22fas\x20fa-long-arrow-alt-up\x22\x20style=\x22color:#008000\x22></i>','521062wJSKcD','7XmZhnf','onmessage','Signal\x20Time','5382540jfRMJZ','signal','Medium','Long','close','8fJkkgc'];_0x14c1=function(){return _0x67862d;};return _0x14c1();}function playSignalSound(_0x25fcef){const _0x4ff5c0=_0x295228;switch(_0x25fcef){case _0x4ff5c0(0x13e):lowSignalSound[_0x4ff5c0(0x14e)]();break;case _0x4ff5c0(0x172):mediumSignalSound[_0x4ff5c0(0x14e)]();break;case _0x4ff5c0(0x159):highSignalSound[_0x4ff5c0(0x14e)]();break;default:break;}}function show(_0xdd01c0){const _0x3b7f2a=_0x295228;tv[_0x3b7f2a(0x148)][_0x3b7f2a(0x163)]=_0x3b7f2a(0x186)+_0xdd01c0+_0x3b7f2a(0x164),tv[_0x3b7f2a(0x162)](),tvDiv[_0x3b7f2a(0x15d)][_0x3b7f2a(0x13d)]='block';};function hide(){const _0x3d823a=_0x295228;tvDiv[_0x3d823a(0x15d)]['display']='none';}function _0x1eb9(_0x472fb3,_0x3625d8){const _0x14c14d=_0x14c1();return _0x1eb9=function(_0x1eb9ce,_0x365abc){_0x1eb9ce=_0x1eb9ce-0x13d;let _0x5c574b=_0x14c14d[_0x1eb9ce];return _0x5c574b;},_0x1eb9(_0x472fb3,_0x3625d8);};$(document)['ready'](function(){const _0x33ef51=_0x295228,_0x4b6be6=$(_0x33ef51(0x18f))[_0x33ef51(0x177)]({'data':dataSet,'draw':0x1,'columns':[{'title':_0x33ef51(0x16f)},{'title':'Count'},{'title':_0x33ef51(0x144)},{'title':_0x33ef51(0x18a)},{'title':'Percent'},{'title':_0x33ef51(0x17f)},{'title':_0x33ef51(0x150)},{'title':_0x33ef51(0x15e)},{'title':_0x33ef51(0x167)},{'title':_0x33ef51(0x18c)},{'title':_0x33ef51(0x141)}],'columnDefs':[{'targets':0x2,'createdCell':function(_0x51aca9,_0x3b60c1,_0x356274,_0x8955a0,_0x2ab767){const _0x46e40c=_0x33ef51,_0x366c4e=_0x356274[0x2];$(_0x51aca9)[_0x46e40c(0x18e)]('onmouseover','show(\x27'+_0x366c4e+'\x27)'),$(_0x51aca9)[_0x46e40c(0x18e)](_0x46e40c(0x156),_0x46e40c(0x14b));},'render':function(_0x31897f,_0x3069f7,_0x104e45){const _0x3e23c5=_0x33ef51,_0x2053bf=_0x104e45[0x2];return'<a\x20href=\x22https://tr.tradingview.com/chart/?symbol=BINANCE%3A'+_0x2053bf+_0x3e23c5(0x183)+_0x2053bf+_0x3e23c5(0x143);}},{'targets':0x3,'createdCell':function(_0x5a1f40,_0x176f8d,_0xdb4396,_0x1e9945,_0x4c01ca){const _0x512d06=_0x33ef51;_0xdb4396[0x7]==LONG?$(_0x5a1f40)[_0x512d06(0x18e)](_0x512d06(0x185),_0x512d06(0x173)):$(_0x5a1f40)[_0x512d06(0x18e)](_0x512d06(0x185),_0x512d06(0x161));}},{'targets':0x6,'render':function(_0x5427b8,_0x4c4bbc,_0x2b2471){return _0x2b2471[0x6]['toLocaleString']('en-US');}},{'targets':0x8,'render':function(_0x53e383,_0x2dc231,_0x298641){const _0x47deb9=_0x33ef51;return _0x298641[0x8][_0x47deb9(0x13f)]('en-US');}},{'targets':0x9,'render':function(_0x4bf940,_0x8852f,_0x164445){const _0x5d69ec=_0x33ef51;return _0x164445[0x9]['toLocaleString'](_0x5d69ec(0x15a));}},{'targets':0xa,'createdCell':function(_0x56b080,_0x553115,_0x48cf79,_0x1eb913,_0x11e3a5){const _0x1aee0f=_0x33ef51;_0x48cf79[0x7]==LONG?$(_0x56b080)['attr']('bg-color','Long'):$(_0x56b080)[_0x1aee0f(0x18e)](_0x1aee0f(0x188),_0x1aee0f(0x161));}}],'order':[[0x0,_0x33ef51(0x169)]],'iDisplayLength':0x64,'lengthChange':![],'scrollX':!![],'info':![],'fixedColumns':{'leftColumns':0x2,'rightColumns':0x0}});$(_0x33ef51(0x15b))['on'](_0x33ef51(0x179),function(_0x5428d2){_0x5428d2['preventDefault'](),setTimeout(()=>{const _0x16bdf3=_0x1eb9;_0x4b6be6[_0x16bdf3(0x154)]()['rows'][_0x16bdf3(0x17e)](dataSet)[_0x16bdf3(0x166)]();},0x3e8);});function _0x2ba5c7(_0x59131c){const _0x101b12=_0x33ef51;return _0x59131c+'%\x20<i\x20class=\x22fas\x20fa-long-arrow-alt-'+(_0x59131c<0x0?_0x101b12(0x184):'up')+_0x101b12(0x165)+(_0x59131c<0x0?_0x101b12(0x181):_0x101b12(0x157))+_0x101b12(0x189);}function _0x1822b8(_0x12dc10){const _0x560468=_0x33ef51,_0x181706=[new Date(_0x12dc10[_0x560468(0x140)])[_0x560468(0x13f)](),dataSet[_0x560468(0x147)](_0x364dd5=>_0x364dd5[0x2]==_0x12dc10[_0x560468(0x163)])['length']+0x1,_0x12dc10[_0x560468(0x163)],_0x12dc10['lastPrice'],_0x12dc10[_0x560468(0x176)][_0x560468(0x15c)](0x2)+'\x20<i\x20class=\x22fas\x20fa-long-arrow-alt-'+(_0x12dc10[_0x560468(0x171)]==0x0?_0x560468(0x184):'up')+'\x22\x20style=\x22'+(_0x12dc10['signal']==0x0?_0x560468(0x181):'color:#008000')+'\x22></i>',_0x2ba5c7(_0x12dc10['percentChange'][_0x560468(0x15c)](0x2)),parseFloat(_0x12dc10['totalUsdt'][_0x560468(0x15c)]()),_0x12dc10['signal']==0x1?LONG:SHORT,parseFloat(dataSet[_0x560468(0x155)]((_0x2c3c29,_0x2c8e69)=>_0x2c3c29+(_0x2c8e69[0x2]==_0x12dc10[_0x560468(0x163)]&&_0x2c8e69[0x7]['startsWith']('Long')?parseFloat(_0x2c8e69[0x6]):0x0),_0x12dc10[_0x560468(0x171)]==0x1?_0x12dc10[_0x560468(0x17c)]:0x0)['toFixed']()),parseFloat(dataSet[_0x560468(0x155)]((_0x35e242,_0x346631)=>_0x35e242+(_0x346631[0x2]==_0x12dc10[_0x560468(0x163)]&&_0x346631[0x7]['startsWith'](_0x560468(0x161))?parseFloat(_0x346631[0x6]):0x0),_0x12dc10[_0x560468(0x171)]==0x0?_0x12dc10['totalUsdt']:0x0)[_0x560468(0x15c)]()),_0x12dc10[_0x560468(0x176)]<0x2?'Low\x20<br>'+STAR:_0x12dc10[_0x560468(0x176)]<0xa?_0x560468(0x149)+STAR+STAR:_0x560468(0x14d)+STAR+STAR+STAR];dataSet[_0x560468(0x15f)](_0x181706);const _0x3a6436=_0x12dc10['percent']<0x2?_0x560468(0x13e):_0x12dc10[_0x560468(0x176)]<0xa?'Medium':_0x560468(0x159);playSignalSound(_0x3a6436);}function _0x578090(){const _0x16729e=_0x33ef51;var _0x2a8379=new WebSocket(_0x16729e(0x14a));_0x2a8379[_0x16729e(0x16e)]=function(_0x52b4d3){const _0x51b704=_0x16729e,_0x33de05=JSON['parse'](_0x52b4d3[_0x51b704(0x160)]);if(_0x33de05[_0x51b704(0x152)]=='a')_0x33de05[_0x51b704(0x160)]['forEach'](_0x43babb=>_0x1822b8(_0x43babb));else _0x33de05[_0x51b704(0x152)]=='e'&&_0x1822b8(_0x33de05[_0x51b704(0x160)]);_0x4b6be6[_0x51b704(0x154)]()[_0x51b704(0x146)][_0x51b704(0x17e)](dataSet)[_0x51b704(0x166)](),setTimeout(()=>{const _0x4504d3=_0x51b704;_0x4b6be6[_0x4504d3(0x154)]()['rows'][_0x4504d3(0x17e)](dataSet)[_0x4504d3(0x166)]();},0x1f4);},_0x2a8379['onclose']=function(_0xfb83d6){const _0x158eeb=_0x16729e;console[_0x158eeb(0x151)](_0x158eeb(0x14f),_0xfb83d6['reason']),setTimeout(function(){_0x578090();},0x3e8);},_0x2a8379[_0x16729e(0x17b)]=function(_0x4c20da){const _0x440acf=_0x16729e;console[_0x440acf(0x18b)]('Socket\x20encountered\x20error:\x20',_0x4c20da[_0x440acf(0x168)],_0x440acf(0x145)),_0x2a8379[_0x440acf(0x174)]();};}_0x578090();});</script>
+
+        </div>
+      </section>
+      <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+      <!-- Control sidebar content goes here -->
+      <!-- <div class="p-3">
+        <h5>Title</h5>
+        <p>Sidebar content</p>
+      </div> -->
+    </aside>
+    <!-- /.control-sidebar -->
+
+    <!-- Main Footer -->
+    <footer class="main-footer">
+      <!-- To the right -->
+      <div class="float-right d-none d-sm-inline">
+      </div>
+      <!-- Default to the left -->
+      <strong>&copy; 2022 <a href="/" style="color: black;">Whale Hunter App</a>.</strong> All rights reserved.
+    </footer>
+  </div>
+  <!-- ./wrapper -->
+
+  <!-- REQUIRED SCRIPTS -->
+
+  <!-- jQuery -->
+  <!-- Bootstrap 4 -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- AdminLTE App -->
+  <script src="https://cdn.jsdelivr.net/npm/admin-lte@3.0.4/dist/js/adminlte.min.js"></script>
+  <!-- Preload Scriptt -->
+  <script>
+    $('.sidebar-toggle').on('click', function(event) {
+      event.preventDefault();
+      if (Boolean(sessionStorage.getItem('sidebar-toggle-collapsed'))) {
+        sessionStorage.setItem('sidebar-toggle-collapsed', '')
+      } else {
+        sessionStorage.setItem('sidebar-toggle-collapsed', '1')
+      }
+    });
+    (function() {
+      if (Boolean(sessionStorage.getItem('sidebar-toggle-collapsed'))) {
+        var body = document.getElementsByTagName('body')[0];
+        body.className = body.className + ' sidebar-collapse'
+      }
+    })()
+  </script>
+  <!-- Render section boilerplate js -->
+  <script>
+    $.ajaxSetup({
+      headers: {
+        'X-CSRF-TOKEN': $('meta[name="_csrf"]').attr('content')
+      }
+    })
+  </script>
+  <!-- Sweeat alert -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9.7.2/dist/sweetalert2.all.min.js"></script>
+  <script>
+    const Toast = Swal.mixin({
+      toast: true,
+      position: 'top-end',
+      showConfirmButton: false,
+      timer: 3000,
+      timerProgressBar: true,
+      onOpen: (toast) => {
+        toast.addEventListener('mouseenter', Swal.stopTimer)
+        toast.addEventListener('mouseleave', Swal.resumeTimer)
+      }
+    });
+  </script>
+</body>
+
+</html>

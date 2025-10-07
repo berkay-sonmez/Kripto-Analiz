@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+ENV/
+env/
+
+# Veri ve loglar
+data/*.csv
+data/*.json
+logs/
+*.log
+
+# Gizli bilgiler
+.env
+*.env
+config.local.py
+
+# Chrome driver
+chromedriver.exe
+chromedriver
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Test
+.pytest_cache/
+.coverage
+htmlcov/
