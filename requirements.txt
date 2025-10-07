@@ -3,7 +3,7 @@ tradingview-ta==3.3.0
 python-dotenv==1.0.0
 
 # Veri işleme
-pandas==2.1.1
+pandas==2.2.0
 numpy==1.26.0
 
 # API ve veri çekme
