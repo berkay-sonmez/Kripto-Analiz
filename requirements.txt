@@ -2,9 +2,9 @@
 tradingview-ta==3.3.0
 python-dotenv==1.0.0
 
-# Veri işleme
-pandas==2.2.0
-numpy==1.26.0
+# Veri işleme (binary wheels için sabit sürümler)
+pandas>=2.0.0,<3.0.0
+numpy>=1.24.0,<2.0.0
 
 # API ve veri çekme
 requests==2.31.0
