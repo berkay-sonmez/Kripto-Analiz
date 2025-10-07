@@ -1,6 +1,6 @@
 #!/bin/bash
-# Render.com build script - Binary wheels only!
-echo "🔧 Installing dependencies with binary wheels..."
+# Render.com build script - Simple install
+echo "🔧 Installing dependencies..."
 pip install --upgrade pip
-pip install --only-binary=:all: -r requirements.txt || pip install -r requirements.txt
+pip install -r requirements.txt
 echo "✅ Build complete!"
